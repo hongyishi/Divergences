@@ -1,82 +1,53 @@
-sprite = 12
-color = { 136 136 136 }
-strata = middle
-
+sprite = 1
+color = { 11 40 93 }
+strata = rich
+state_capital_only = yes
 
 rebel =
 {
-	cavalry = 0.0
-	artillery = 0.1
-	cuirassier = 0.05
-	dragoon = 0.05
-	guard = 0.1
-	regular = 0.5
-	hussar = 0.05
-	infantry = 0.1
+	cavalry = 0.1
+	artillery = 0
+	cuirassier = 0.1
+	dragoon = 0.1
+	guard = 0.6
+	hussar = 0.1
+	infantry = 0
 	irregular = 0
-}
-
-demote_migrant = yes
-
-administrative_efficiency = yes
-research_points = 2
-research_optimum = 0.01
-tax_eff = 1.0
-
-everyday_needs_income =
-{
-	type = administration
-	weight = 1
-}
-
-life_needs_income = {
-	type = administration
-	weight = 1
-}
-
-luxury_needs_income =
-{
-	type = administration
-	weight = 1
 }
 
 life_needs = {
 	canned_food = 6
 }
 everyday_needs = {
+	horses = 10	
 	bronze = 10
 	steel = 10
-	sugar = 15
-	pharmaceuticals = 10
-	print = 20
-	tea = 15
-	horses = 4
-	liquor = 10
-	regular_clothes = 15
-	furniture = 10
-	cigarettes = 10
-	shoes = 10
-	electric_power = 20
-
+	sugar = 25
+	spices = 25
+	cement = 25
+	coffee = 25
+	tea = 25
+	glass = 5
+	wine = 25
+	pharmaceuticals = 25
+	luxury_clothes = 10
+	luxury_furniture = 10
+	cigars = 25
+	boots = 25
+	electric_power = 25
+	shares = 25
+	print = 10
 }
 luxury_needs = {
-	boots = 10
-	spices = 10
-	opium  = 10
-	coffee = 10
-	automobiles = 10
-	telephones = 10
-	wine = 15
-	luxury_clothes = 3
-	luxury_furniture = 2
-	cigars = 10
-	fuel = 20
-	radio = 10
-	shares = 20
-	aeroplanes = 0.1
+	opium  = 30
+	automobiles = 50
+	telephones = 50
+	radio = 50
+	fuel = 50
+	aeroplanes = 20
+	steamer_convoy = 5
+	financial_services = 10
 }
-
-
 country_migration_target =
 {
 	factor = 0.01
@@ -487,404 +458,6 @@ migration_target =
 
 promote_to =
 {
-	craftsmen = 
-	{
-		factor = 0.01
-		modifier = {
-			factor = 10
-			location = {
-				work_available = {
-					worker = craftsmen
-				}
-			}
-		}
-		modifier = {
-		factor = -5
-		state_scope = { is_slave = yes }
-	}
-			modifier = {
-			factor = -5
-			not = { literacy = 0.20 }
-		}
-		modifier = {
-			factor = -5
-			not = { literacy = 0.10 }
-		}
-		modifier = {
-			factor = 1
-			literacy = 0.20
-		}
-		modifier = {
-			factor = 1
-			literacy = 0.30
-		}
-		modifier = {
-			factor = 1
-			literacy = 0.40 
-		}
-		modifier = {
-			factor = 1
-			literacy = 0.50 
-		}
-		modifier = {
-			factor = 1
-			literacy = 0.60 
-		}
-		modifier = {
-			factor = 1
-			literacy = 0.70 
-		}
-		modifier = {
-			factor = 1
-			literacy = 0.80 
-			}
-		modifier = {
-			factor = 1
-			literacy = 0.90 
-			}
-		modifier = {
-			factor = 2
-			literacy = 1 
-		}
-		modifier = {
-			factor = -50
-			location = {
-				NOT = {
-					work_available = {
-						worker = craftsmen
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = -50
-				location = {
-					is_colonial = yes
-				}
-			}
-
-	}
-	
-	
-	farmers = { #and labourers
-		factor = 0.01
-		modifier = {
-			factor = 1
-			not = { literacy = 0.10 }
-		}
-		modifier = {
-			factor = 1
-			not = { literacy = 0.20 }
-		}
-		modifier = {
-			factor = 1
-			not = { literacy = 0.30 }
-		}
-		modifier = {
-			factor = 1
-			not = { literacy = 0.40 }
-		}
-		modifier = {
-			factor = 1
-			not = { literacy = 0.50 }
-		}
-		modifier = {
-			factor = 1
-			not = { literacy = 0.60 }
-		}
-		modifier = {
-			factor = 1
-			not = { literacy = 0.70 }
-		}
-		modifier = {
-			factor = 1
-			not = { literacy = 0.80 }
-			}
-		modifier = {
-			factor = 1
-			not = { literacy = 0.90 }
-			}
-		modifier = {
-			factor = 1
-			not = { literacy = 1 }
-		}
-		modifier = {
-			factor = 10
-			location = {
-					OR = {
-						work_available = {	worker = farmers }
-						work_available = {	worker = labourers }
-					}
-				}
-			}
-		}
-	
-	
-	soldiers = {
-		factor = 0.01
-		modifier = {
-			factor = 2
-			OR = {
-				nationalvalue = nv_dominion
-				nationalvalue = nv_glory
-			}
-		}
-		modifier = {
-			factor = -4
-			nationalvalue = nv_liberty
-		}
-
-			modifier = {
-				factor = -5
-				not = { recruited_percentage = 0.25 }
-				country = { total_amount_of_divisions = 1 }
-			}
-			modifier = {
-				factor = -5
-				not = {  recruited_percentage = 0.33 }
-				country = { total_amount_of_divisions = 1 }
-			}
-			modifier = {
-				factor = -5
-				not = { recruited_percentage = 0.40 }
-				country = { total_amount_of_divisions = 1 }
-			}
-			modifier = {
-				factor = -5
-				not = {  recruited_percentage = 0.50 }
-				country = { total_amount_of_divisions = 1 }
-			}
-
-		modifier = {
-			factor = 5
-			OR = {
-				nationalvalue = nv_might
-				nationalvalue = nv_independence
-			}
-		}
-		modifier = {
-			factor = 10
-			nationalvalue = nv_supremacy
-		}
-		modifier = {
-			factor = -10
-				location = {
-					is_colonial = yes
-				}
-			}
-	
-		group = {
-			modifier = {
-				factor = 3
-				military_spending = 0.10
-			}
-			modifier = {
-				factor = 3
-				military_spending = 0.20
-			}
-			modifier = {
-				factor = 3
-				military_spending = 0.30
-			}
-			modifier = {
-				factor = 2
-				military_spending = 0.40
-			}
-			modifier = {
-				factor = 2
-				military_spending = 0.5
-			}
-			modifier = {
-				factor = 2
-				military_spending = 0.6
-			}
-			modifier = {
-				factor = 2
-				military_spending = 0.7
-			}
-			modifier = {
-				factor = 1
-				military_spending = 0.8
-			}
-			modifier = {
-				factor = 1
-				military_spending = 0.9
-			}
-			modifier = {
-				factor = 1
-				military_spending = 0.99
-			}
-		}
-		group = {
-			modifier = {
-				factor = -2
-				state_scope = {
-				soldiers = 0.003
-				}
-			}
-			modifier = {
-				factor = -2
-								state_scope = {
-				soldiers = 0.06 
-				}
-			}
-			modifier = {
-				factor = -2
-								state_scope = {
-				soldiers = 0.01 
-			}
-			}
-			modifier = {
-				factor = -2
-				state_scope = {
-				soldiers = 0.013 
-				}
-			}
-			modifier = {
-				factor = -2
-				state_scope = {
-				soldiers = 0.016 
-				}
-			}
-			modifier = {
-				factor = -2
-				state_scope = {
-				soldiers = 0.02 
-				}
-			}
-			modifier = {
-				factor = -2
-				state_scope = {
-				soldiers = 0.023 
-				}
-			}
-			modifier = {
-				factor = -2
-				state_scope = {
-				soldiers = 0.026 
-				}
-			}
-			modifier = {
-				factor = -2
-				state_scope = {
-				soldiers = 0.03 
-				}
-			}
-		}
-			modifier = {
-				factor = -50
-				state_scope = {
-				soldiers = 0.035
-				}
-			}		
-		group = {
-			modifier = {
-				factor = 1
-				jingoism = 20
-			}
-			modifier = {
-				factor = 1
-				jingoism = 40
-			}
-			modifier = {
-				factor = 1
-				jingoism = 60
-			}
-			modifier = {
-				factor = 1
-				jingoism = 80
-			}
-			modifier = {
-				factor = 1
-				jingoism = 100
-			}
-		}
-		group = {
-			modifier = {
-				factor = 1
-		 		revanchism = 0.05
-			}
-			modifier = {
-				factor = 1
-		 		revanchism = 0.10
-			}
-			modifier = {
-				factor = 2
-		 		revanchism = 0.15
-			}
-			modifier = {
-				factor = 4
-		 		revanchism = 0.20
-			}
-		}
-		group = {
-			modifier = {
-				factor = 1
-				pro_military = 20
-			}
-			modifier = {
-				factor = 1
-				pro_military = 40
-			}
-			modifier = {
-				factor = 1
-				pro_military = 60
-			}
-			modifier = {
-				factor = 1
-				pro_military = 80
-			}
-			modifier = {
-				factor = 1
-				pro_military = 100
-			}
-		}
-		group = {
-			modifier = {
-				factor = -1
-				anti_military = 20
-			}
-			modifier = {
-				factor = -1
-				anti_military = 40
-			}
-			modifier = {
-				factor = -1
-				anti_military = 60
-			}
-			modifier = {
-				factor = -1
-				anti_military = 80
-			}
-			modifier = {
-				factor = -1
-				anti_military = 100
-			}
-		}
-		group = {
-			modifier = {
-				factor = -1
-				pacifism = 20
-			}
-			modifier = {
-				factor = -1
-				pacifism = 40
-			}
-			modifier = {
-				factor = -1
-				pacifism = 60
-			}
-			modifier = {
-				factor = -1
-				pacifism = 80
-			}
-			modifier = {
-				factor = -1
-				pacifism = 100
-			}
-		}
-	}
-
 
 	capitalists =
 	{
@@ -892,6 +465,9 @@ promote_to =
 		modifier = {
 			factor = -50
 			Not = {literacy = 0.20}
+		}
+		modifier = {
+			factor = 10
 		}
 		modifier = {
 			factor = -50
@@ -1394,7 +970,276 @@ promote_to =
 		}
 	}
 	
+	
+	bureaucrats =
+	{
+		factor = 0.01
+		modifier = {
+			factor = -100
+			is_primary_culture = no
+			is_accepted_culture = no
+			location = {
+				is_colonial = yes
+			}
+		}
+		group = {
+			modifier = {
+				factor =  0.25
+				literacy = 0.40
+			}
+			modifier = {
+				factor = 0.25
+				literacy = 0.50
+			}
+			modifier = {
+				factor = 0.5
+				literacy = 0.6
+			}
+			modifier = {
+				factor = 0.5
+				literacy = 0.7
+			}
+			modifier = {
+				factor = 1
+				literacy = 0.8
+			}
+			modifier = {
+				factor = 1
+				literacy = 0.9
+			}
+			modifier = {
+				factor = 2
+				literacy = 1
+			}
+		}
+		group = {
+			modifier = {
+				factor = -2
+				state_scope = { bureaucrats = 0.001 }
+			}
+			modifier = {
+				factor = -2
+				state_scope = { bureaucrats = 0.002 }
+			}
+			modifier = {
+				factor = -2
+				state_scope = { bureaucrats = 0.003 }
+			}
+			modifier = {
+				factor = -2
+				state_scope = { bureaucrats = 0.004 }
+			}
+			modifier = {
+				factor = -2
+				state_scope = { bureaucrats = 0.005 }
+			}
+			modifier = {
+				factor = -2
+				state_scope = { bureaucrats = 0.006 }
+			}
+			modifier = {
+				factor = -2
+				state_scope = { bureaucrats = 0.007 }
+			}
+			modifier = {
+				factor = -2
+				state_scope = { bureaucrats = 0.008 }
+			}
+			modifier = {
+				factor = -2
+				state_scope = { bureaucrats = 0.009 }
+			}
+			modifier = {
+				factor = -2
+				state_scope = { bureaucrats = 0.01 }
+			}
+			modifier = {
+				factor = -2
+				state_scope = { bureaucrats = 0.011 }
+			}
+			modifier = {
+				factor = -2
+				state_scope = { bureaucrats = 0.012 }
+			}
+			modifier = {
+				factor = -2
+				state_scope = { bureaucrats = 0.013 }
+			}
+			modifier = {
+				factor = -2
+				state_scope = { bureaucrats = 0.014 }
+			}
+			modifier = {
+				factor = -2
+				state_scope = { bureaucrats = 0.015 }
+			}
+			modifier = {
+				factor = -2
+				state_scope = { bureaucrats = 0.016 }
+			}
+			modifier = {
+				factor = -2
+				state_scope = { bureaucrats = 0.017 }
+			}
+			modifier = {
+				factor = -2
+				state_scope = { bureaucrats = 0.018 }
+			}
+			modifier = {
+				factor = -2
+				state_scope = { bureaucrats = 0.019 }
+			}
+			modifier = {
+				factor = -4
+				state_scope = { bureaucrats = 0.020 }
+			}
+			modifier = {
+				factor = -4
+				state_scope = { bureaucrats = 0.022 }
+			}
+			modifier = {
+				factor = -4
+				state_scope = { bureaucrats = 0.024 }
+			}
+			modifier = {
+				factor = -4
+				state_scope = { bureaucrats = 0.026 }
+			}
+			modifier = {
+				factor = -4
+				state_scope = { bureaucrats = 0.028 }
+			}
+			modifier = {
+				factor = -6
+				state_scope = { bureaucrats = 0.03 }
+			}
+		}
+			modifier = {
+				factor = -50
+				state_scope = { bureaucrats = 0.08 }
+			}		
+		
+		modifier = {
+			factor = 4
+			health_care = trinket_health_care
+		}
+		modifier = {
+			factor = 8
+			health_care = low_health_care
+		}
+		modifier = {
+			factor = 12
+			health_care = acceptable_health_care
+		}
+		modifier = {
+			factor = 16
+			health_care = good_health_care  
+		}
+		modifier = {
+			factor = 4
+			education = church  
+		}		
+		modifier = {
+			factor = 8
+			education = public
+		}	
 
+		modifier = {
+			factor = 4
+			safety_regulations = trinket_safety
+		}
+		modifier = {
+			factor = 8
+			safety_regulations = low_safety
+		}		
+		modifier = {
+			factor = 12
+			safety_regulations = acceptable_safety
+		}
+		modifier = {
+			factor = 16
+			safety_regulations = good_safety
+		}
+		
+		modifier = {
+			factor = 4
+			work_hours = fourteen_hours
+		}
+		modifier = {
+			factor = 8
+			work_hours = twelve_hours
+		}		
+		modifier = {
+			factor = 12
+			work_hours  = ten_hours
+		}
+		modifier = {
+			factor = 16
+			work_hours = eight_hours
+		}
+		modifier = {
+			factor = 4
+			wage_reform = trinket_wage
+		}
+		modifier = {
+			factor = 8
+			wage_reform = low_minimum_wage
+		}		
+		modifier = {
+			factor = 12
+			wage_reform  = acceptable_minimum_wage
+		}
+		modifier = {
+			factor = 16
+			wage_reform = good_minimum_wage
+		}
+		
+		group = {
+			modifier = {
+				factor = 2
+				crime_fighting = 0.1
+			}
+			modifier = {
+				factor = 2
+				crime_fighting = 0.2
+			}
+			modifier = {
+				factor = 2
+				crime_fighting = 0.3
+			}
+			modifier = {
+				factor = 2
+				crime_fighting = 0.4
+			}
+			modifier = {
+				factor = 2
+				crime_fighting = 0.5
+			}
+			modifier = {
+				factor = 2
+				crime_fighting = 0.6
+			}
+			modifier = {
+				factor = 2
+				crime_fighting = 0.7
+			}
+			modifier = {
+				factor = 2
+				crime_fighting = 0.8
+			}
+			modifier = {
+				factor = 2
+				crime_fighting = 0.9
+			}
+			modifier = {
+				factor = 2
+				crime_fighting = 1
+			}
+		}
+	}
+	
+	
+	
 	
 		clerks = 
 	{
@@ -1402,10 +1247,6 @@ promote_to =
 		modifier = {
 			factor = -50
 			Not = {literacy = 0.50}
-		}
-		modifier = {
-			factor = -5
-			state_scope = { is_slave = yes }
 		}
 		group = {
 			modifier = {
@@ -1428,6 +1269,10 @@ promote_to =
 				factor = 2
 				literacy = 1
 			}
+		}
+		modifier = {
+			factor = -5
+			state_scope = { is_slave = yes }
 		}
 		modifier = {
 			factor = -20
@@ -1453,6 +1298,17 @@ promote_to =
 	}
 	
 	
+#	labourers = {
+#		factor = 0.01
+#		modifier = {
+#			factor = 1.1
+#			location = {
+#				work_available = {
+#					worker = labourers
+#				}
+#			}
+#		}
+#	}
 }
 
 ideologies = {
@@ -1720,11 +1576,11 @@ ideologies = {
 			}
 		}	
 		modifier = {
-			factor = 0.5
-			literacy = 0.40
+			factor = 1.2
+			not = { literacy = 0.40 }
 		}
 		modifier = {
-			factor = 0.5
+			factor = 1.1
 			consciousness = 4 
 		}
 		modifier = {
@@ -1775,7 +1631,7 @@ ideologies = {
 		}
 
 		modifier = {
-			factor = 1.5
+			factor = 1.25
 			country = { civilized = no }
 		}	
 		modifier = {
@@ -1810,7 +1666,7 @@ ideologies = {
 }
 
 	conservative = {
-		factor = 1
+		factor = 1.3
 		modifier = {
 			factor = 1.5
 			nationalvalue = nv_order
@@ -1840,7 +1696,7 @@ ideologies = {
 			NOT = { ruling_party_ideology = fascist }
 		}
 		modifier = {
-			factor = 0
+			factor = 0.5
 			militancy = 6
 		}
 		modifier = {
@@ -1862,10 +1718,30 @@ ideologies = {
 			not = { social_reform_want = 0.25 }
 			not = { political_reform_want = 0.25 }
 		}
+		modifier = {
+			factor = 0.9
+			poor_strata_militancy = 5
+		}
+		modifier = {
+			factor = 0.9
+			poor_strata_militancy = 6
+		}
+		modifier = {
+			factor = 0.9
+			poor_strata_militancy = 7
+		}
+		modifier = {
+			factor = 0.9
+			poor_strata_militancy = 8
+		}
+		modifier = {
+			factor = 0.9
+			poor_strata_militancy = 9
+		}
 	}
 	
 	socialist = {
-		factor = 1
+		factor = 0.3
 		modifier = {
 			factor = 0.7
 			nationalvalue = nv_freedom
@@ -1894,7 +1770,7 @@ ideologies = {
 		}
 
 		modifier = {
-			factor = 0
+			factor = 0.5
 			militancy = 6
 		}
 		modifier = {
@@ -2011,7 +1887,7 @@ ideologies = {
 	}
 
 liberal = {
-		factor = 1
+		factor = 0.9
 		modifier = {
 			factor = 1.1
 			nationalvalue = nv_equality
@@ -2038,6 +1914,14 @@ liberal = {
 		modifier = {
 			factor = 0.8
 			not = { literacy = 0.35 }
+		}
+		modifier = {
+			factor = 0.8
+			not = { literacy = 0.25 }
+		}
+		modifier = {
+			factor = 0.8
+			not = { literacy = 0.15 }
 		}
 		modifier = {
 			factor = 0.5
@@ -2183,7 +2067,7 @@ issues = {
 		}
 	}
 	laissez_faire = {
-		factor = 0.8
+		factor = 1
 		modifier = {
 			factor = 1.1
 			OR = {
@@ -2239,7 +2123,7 @@ issues = {
 		}
 	} 
 	interventionism = {
-		factor = 0.9
+		factor = 1
 		modifier = {
 			factor = 0
 			NOT = {
@@ -2307,7 +2191,7 @@ issues = {
 		}
 	} 
 	planned_economy = {
-		factor = 1.1
+		factor = 1
 		modifier = {
 			factor = 0
 			NOT = {
@@ -2335,7 +2219,7 @@ issues = {
 		}
 	} 
 	jingoism = {
-		factor = 1
+		factor = 1.1
 		modifier = {
 			factor = 1.1
 			OR = {
@@ -2534,7 +2418,7 @@ issues = {
 		}
 	}
 	pacifism = {
-		factor = 1
+		factor = 0.9
 		modifier = {
 			factor = 1.1
 			OR = {
@@ -2616,7 +2500,7 @@ issues = {
 		}
 	}
 	secularized = {
-		factor = 1.1
+		factor = 1
 		modifier = {
 			factor = 1.5
 			NOT = { is_state_religion = yes }
@@ -2650,7 +2534,7 @@ issues = {
 		} 
 	}
 	moralism = {
-		factor = 0.9
+		factor = 1.1
 		modifier = {
 			factor = 1.05
 			nationalvalue = nv_order
@@ -2692,7 +2576,7 @@ issues = {
 		}
 	}
 	residency = {
-		factor = 1
+		factor = 1.1
 		modifier = {
 			factor = 1.1
 			OR = {
@@ -2731,7 +2615,7 @@ issues = {
 		}
 	}
 	full_citizenship = {
-		factor = 1
+		factor = 0.8
 		modifier = {
 			factor = 1.1
 			OR = {
@@ -2764,18 +2648,21 @@ issues = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.75
 			state_scope = {
 				is_slave = no
 			}
 		}	
-
 		modifier = {
-			factor = 1.25
+			factor = 1.5
+			consciousness = 1
+		}
+		modifier = {
+			factor = 1.5
 			consciousness = 2
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			consciousness = 3
 		}
 		modifier = {
@@ -2816,47 +2703,47 @@ issues = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.15
 			state_scope = {
 				is_slave = yes
 			}
 		}	
 		modifier = {
-			factor = 1.25
+			factor = 1.1
 			consciousness = 2
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.1
 			consciousness = 3
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			consciousness = 4
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			consciousness = 5
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			consciousness = 6
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			consciousness = 7
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			consciousness = 8
 		}	
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			consciousness = 9
 		}	
 	}
 	
 	landed_voting = {
-		factor = 0.9
+		factor = 1
 		modifier = {
 			factor = 0
 			OR = {
@@ -2932,7 +2819,7 @@ issues = {
 		}		
 	}
 	wealth_weighted_voting = {
-		factor = 1
+		factor = 0.9
 		modifier = {
 			factor = 0
 			OR = {
@@ -3007,7 +2894,7 @@ issues = {
 		}		
 	}	
 	wealth_voting = {
-		factor = 1.3
+		factor = 0.8
 		modifier = {
 			factor = 0
 			OR = {
@@ -3082,7 +2969,7 @@ issues = {
 		}		
 	}
 	universal_weighted_voting = {
-		factor = 0.9
+		factor = 0.7
 		modifier = {
 			factor = 0
 			OR = {
@@ -3157,7 +3044,7 @@ issues = {
 		}		
 	}
 	universal_voting = {
-		factor = 0.8
+		factor = 0.6
 		modifier = {
 			factor = 0
 			OR = {
@@ -3347,7 +3234,6 @@ issues = {
 			factor = 0
 			OR = {
 				vote_franschise = none_voting 
-				vote_franschise = landed_voting 
 				NOT = { consciousness = 6 }
 				NOT = {
 					is_next_reform = harassment
@@ -3383,12 +3269,11 @@ issues = {
 		}
 	}
 	gerrymandering = {
-		factor = 1
+		factor = 0.9
 		modifier = {
 			factor = 0
 			OR = {
 				vote_franschise = none_voting
-				vote_franschise = landed_voting 
 				NOT = { consciousness = 6 }
 				NOT = {
 					is_next_reform = gerrymandering
@@ -3398,15 +3283,15 @@ issues = {
 			}
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.25
 			NOT = { agree_with_ruling_party = 0.90 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.25
 			NOT = { agree_with_ruling_party = 0.80 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.25
 			NOT = { agree_with_ruling_party = 0.70 }
 		}
 		modifier = {
@@ -3424,12 +3309,11 @@ issues = {
 		}
 	}
 	non_secret_ballots = {
-		factor = 1
+		factor = 0.8
 		modifier = {
 			factor = 0
 			OR = {
 				vote_franschise = none_voting 
-				vote_franschise = landed_voting 
 				NOT = { consciousness = 6 }
 				NOT = {
 					is_next_reform = non_secret_ballots
@@ -3439,15 +3323,15 @@ issues = {
 			}
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.25
 			NOT = { agree_with_ruling_party = 0.90 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.25
 			NOT = { agree_with_ruling_party = 0.80 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.25
 			NOT = { agree_with_ruling_party = 0.70 }
 		}
 		modifier = {
@@ -3465,12 +3349,11 @@ issues = {
 		}
 	}
 	secret_ballots = {
-		factor = 1
+		factor = 0.7
 		modifier = {
 			factor = 0
 			OR = {
 				vote_franschise = none_voting 
-				vote_franschise = landed_voting 
 				NOT = { consciousness = 6 }
 				NOT = {	is_next_reform = secret_ballots }
 				luxury_needs =  1.0
@@ -3478,15 +3361,15 @@ issues = {
 			}
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.25
 			NOT = { agree_with_ruling_party = 0.90 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.25
 			NOT = { agree_with_ruling_party = 0.80 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.25
 			NOT = { agree_with_ruling_party = 0.70 }
 		}
 		modifier = {
@@ -6309,7 +6192,7 @@ trinket_subsidies = {
 					country = { civilized = no }
 					not = { consciousness = 5 }
 					and = { not = { country = {	conscription = mandatory_service } }
-					not = {	ountry = {	conscription = two_year_draft } } }
+					not = {	country = {	conscription = two_year_draft } } }
 				}
 			}
 			modifier = {

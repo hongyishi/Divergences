@@ -32,6 +32,7 @@ everyday_needs = {
 	cigarettes = 3
 	shoes = 5
 	print = 3
+	horses = 4
 	fertilizer = 5
 }
 luxury_needs = {

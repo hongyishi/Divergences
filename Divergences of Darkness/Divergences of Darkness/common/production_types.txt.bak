@@ -162,7 +162,6 @@ aeroplane_factory = {
 			OR = {
 				has_building = machine_parts_factory 
 				has_building = iron_machine_parts_factory 
-				has_building = steel_machine_parts_factory
 				has_building = advanced_machine_parts_factory 
 			}
 		}
@@ -233,7 +232,6 @@ artillery_factory = {
 			OR = {
 				has_building = machine_parts_factory 
 				has_building = iron_machine_parts_factory 
-				has_building = steel_machine_parts_factory
 				has_building = advanced_machine_parts_factory 
 			}
 		}
@@ -257,7 +255,6 @@ automobile_factory = {
 			OR = {
 				has_building = machine_parts_factory 
 				has_building = iron_machine_parts_factory 
-				has_building = steel_machine_parts_factory
 				has_building = advanced_machine_parts_factory 
 			}
 		}
@@ -300,7 +297,6 @@ barrel_factory = {
 			OR = {
 				has_building = machine_parts_factory 
 				has_building = iron_machine_parts_factory 
-				has_building = steel_machine_parts_factory
 				has_building = advanced_machine_parts_factory 
 			}
 		}
@@ -418,10 +414,7 @@ furniture_factory = {
 	value = 26.4     #391
 	bonus = {
 		trigger = {
-			OR = {
 			has_building = lumber_mill
-				has_building = tropical_lumber_mill
-			}
 		}
 		value = 0.2
 	}
@@ -636,9 +629,8 @@ steamer_shipyard = {
 		trigger = { 
 			OR = {
 				has_building = machine_parts_factory 
-				has_building = iron_machine_parts_factory
-				has_building = steel_machine_parts_factory
 				has_building = advanced_machine_parts_factory 
+				has_building = iron_machine_parts_factory
 			}
 		}
 		value = 0.2
@@ -1518,11 +1510,6 @@ RGO_template_farmers = {
 			effect_multiplier = 1.25
 			amount = 0.1
 		}
-		{ 
-			poptype = slaves 
-			effect = throughput
-			amount = 0.9
-		}
 	}
 	
 	type = rgo
@@ -1547,11 +1534,6 @@ RGO_template_labourers = {
 			effect = output
 			effect_multiplier = 1.25
 			amount = 0.1
-		}
-		{ 
-			poptype = slaves 
-			effect = throughput
-			amount = 0.9
 		}
 	}
 	
@@ -1736,25 +1718,6 @@ tropical_wood_lodge = {
 }
 
 ### Artisans #####################################################################################
-
-artisan_barrel = {       
-	input_goods = {      
-		machine_parts = 4
-		electric_gear = 5
-		steel = 7
-	}
-	output_goods = barrels 
-	value = 5
-	
-	owner = {
-		poptype = artisan  
-		effect = output
-	}
-	
-	type = artisan
-	
-	workforce = 10000
-}
 
 artisan_radio = {       
 	input_goods = {      
@@ -2358,24 +2321,24 @@ artisan_cigarette = {
 	workforce = 10000
 }
 
-#artisan_horsebreeder = {
-#	input_goods = {   
-#		grain = 19
-#		fruit = 10
-#		iron = 3
-#	}
-#
-#	output_goods = horses 
-#	value = 16
-#	owner = {
-#		poptype = artisan 
-#		effect = output
-#	}
-#	
-#	type = artisan
-#	
-#	workforce = 10000
-#}
+artisan_horsebreeder = {
+	input_goods = {   
+		grain = 38
+		fruit = 20
+		iron = 5
+	}
+
+	output_goods = horses 
+	value = 52
+	owner = {
+		poptype = artisan 
+		effect = output
+	}
+	
+	type = artisan
+	
+	workforce = 10000
+}
 
 artisan_cobbler = {
 	input_goods = {   
@@ -2588,88 +2551,6 @@ artisan_newspaper = {
 	}
 	
 	type = artisan
-
-	workforce = 10000
-}
-artisan_aeroplane = {       
-	input_goods = {
-		machine_parts = 1.06	#38.69
-		electric_gear = 2	#32
-		rubber = 1  		#7
-		lumber = 3.3 		#3.3	total input+maint = 90
-	}
-	output_goods = aeroplanes
-	value = 0.91			#100
-	
-	owner = {
-		poptype = artisan 
-		effect = output
-	}
-	
-	type = artisan
-	
-	workforce = 10000
-}
-
-
-artisan_automobile = {       
-	input_goods = {     
-		machine_parts = 1	#36.5
-		electric_gear = 1.5	#24
-		rubber = 1		#7
-		steel = 2.25		#10.58	total input+maint = 89
-	}
-	
-	output_goods = automobiles 
-	value = 1.43			#100
-	
-	owner = {
-		poptype = artisan 
-		effect = output
-	}
-	
-	type = artisan
-	
-	workforce = 10000
-}
-
-
-
-############# ADVANCED FACTORIES
-
-artisan_fuel = {       
-	input_goods = { 
-		oil = 2.5			#30	total input+maint = 40
-	}
-	output_goods = fuel
-	value = 2			#50
-	
-	owner = {
-		poptype = artisan 
-		effect = output
-	}
-	
-	type = artisan
-	
-	workforce = 10000
-}
-
-artisan_steamer = {       
-	input_goods = { 
-		steel = 22		#94
-		coal = 30		#69 (huhuhuhuh) total input+maint = 182
-	}
-	output_goods = steamer_convoy 
-	is_coastal = yes
-	value = 3			#195
-	
-	owner = {
-		poptype = artisan 
-		effect = output
-	}
-	
-	type = artisan
-	
 
 	workforce = 10000
 }

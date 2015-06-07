@@ -18,12 +18,11 @@ SFJ		= "countries/Sudurhafeyjar.txt"
 SHO		= "countries/Shona.txt"
 SUA		= "countries/Suazi.txt"
 XHO		= "countries/Xhosa.txt"
-HRE 	= "countries/Holy Roman Empire.txt"
+HRE 		= "countries/Holy Roman Empire.txt"
 AZL		= "countries/Federation.txt" 
 PAN		= "countries/Pannonia.txt"
 TAR		= "countries/Tatarstan.txt"
-ASM 	= "countries/Assam.txt"
-ARC 	= "countries/Arcadia.txt" 
+ASM 		= "countries/Assam.txt"
 
 ### NEW NATIONS MOD ###
 
@@ -326,10 +325,9 @@ MLY		= "countries/Malaya.txt"
 SHA		= "countries/Shan.txt"
 SUL		= "countries/Sulu.txt"
 TAW		= "countries/Taiwan.txt"
-MCK		= "countries/Manchukuo.txt"
-MCH		= "countries/Manchuria.txt"
-MIG		= "countries/Ming.txt" 
-TNG		= "countries/Tungning.txt"
+MCK		="countries/Manchukuo.txt"
+MIG		="countries/Ming.txt" 
+TNG		="countries/Tungning.txt"
 TAI		="countries/Taiping.txt"
 TPG		="countries/Taiping.txt"
 DAX		="countries/Daxi.txt"
@@ -376,7 +374,8 @@ ICL		= "countries/Iceland.txt"
 
 # North America
 
-ANI		="countries/Anishinabe.txt"	#Cree/Ojibwe/Chipewan/Odawa
+ANI		="countries/Anishinabe.txt"	#Cree/Ojibwe/Chipewan/Odawa   
+ARC		="countries/Arcadia.txt"
 ATS		="countries/Athesia.txt"
 AZT		="countries/Aztlan.txt"		#Aztec/Nahuatl
 CHE		="countries/Cherokee.txt"
@@ -391,7 +390,7 @@ JAM		="countries/Jamaica.txt"
 JLS		="countries/Jalisco.txt"
 LST		="countries/Lusitania.txt"
 MEX		="countries/Mexico.txt"
-NBG		="countries/New Burgundy.txt"
+NBG		="countries/New Burgundy.txt"   
 NIC		="countries/Nicaragua.txt"
 NUN		="countries/Nunavut.txt"		#Inuit
 PNM		="countries/Panama.txt"

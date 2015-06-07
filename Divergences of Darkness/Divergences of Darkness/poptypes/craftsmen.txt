@@ -42,6 +42,7 @@ luxury_needs = {
 	coffee = 10
 	spices = 5
 	automobiles = 10
+	horses = 1
 	telephones = 10
 	wine = 10
 	cigars = 10

@@ -25,11 +25,10 @@ manowar = {
 	
 	supply_consumption = 1.0
 	supply_cost = {
-		clipper_convoy = 0.2
-		lumber = 2
-		fabric = 1
-		artillery = 0.1
+		lumber = 1
 		gunpowder = 1
+		fabric = 1
+		bronze = 0.5
 	}
 	
 

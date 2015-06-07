@@ -44,6 +44,7 @@ luxury_needs = {
 	telephones = 10
 	wine = 10
 	cigars = 10
+	horses = 1
 	fuel = 10
 	radio = 10
 	electric_power = 15

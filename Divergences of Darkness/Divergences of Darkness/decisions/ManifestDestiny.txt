@@ -167,9 +167,6 @@ political_decisions = {
 			NA_15 = {
 				add_core = PLA
 			}
-			TEX_132 = {
-				add_core = PLA
-			}
 			DNG_2 = {
 				add_core = PLA
 			}
@@ -370,7 +367,7 @@ political_decisions = {
 					tag = NBG
 					owns = 200 
 					owns = 2219 
-					}
+					}    
 				AND = { 
 					tag = ARC
 					owns = 200 
@@ -506,10 +503,7 @@ political_decisions = {
 		picture = map_central_america
 		potential = { 
 			war_with = CLM
-			OR = {
-			continent = north_america
-			continent = south_america
-		}
+			NOT = { tag = SPA }
 			is_greater_power = yes 
 		}
 		
@@ -565,34 +559,5 @@ political_decisions = {
 		badboy = 10 
 		prestige = 25 
 		}
-	}
-	
-	odensmark = { 
-	picture = Great_North 
-	
-	potential = { 
-	OR = { tag = VIN tag = ARC }
-	year = 1860 
-	2596 = { empty = yes }
-	9 = { empty = yes }
-	11 = { empty = yes}
-	12 = { empty = yes }
-	}
-	
-	allow = { 
-	is_greater_power = yes 
-	owns = 31 
-	owns = 43 
-	}
-	
-	effect = { 
-	random_owned = {
-				9 = { secede_province = THIS }
-				11 = { secede_province = THIS }
-				12 = { secede_province = THIS }
-				2596 = { secede_province = THIS }
-			}
-	}
-	
 	}
 }
