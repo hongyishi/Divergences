@@ -727,13 +727,6 @@ emigration_chance =
 			location = { controlled_by = owner }
 		}	
 	}
-	modifier = {
-		factor = 20
-		country = { has_country_flag = kebabbies }
-		location = { is_colonial = no }
-		is_primary_culture = no
-		is_accepted_culture = no
-	}
 }
 
 #general assimilation mtth, same for all pops
@@ -919,13 +912,6 @@ assimilation_chance =
 	modifier = {
 		factor = -50
 		country = { civilized = no }
-	}
-	modifier = {
-		factor = 15
-		country = { has_country_flag = kebabbies }
-		location = { is_colonial = no }
-		is_primary_culture = no
-		is_accepted_culture = no
 	}
 }
 

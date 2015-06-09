@@ -370,7 +370,7 @@ political_decisions = {
 	potential = { 
 	OR = { tag = HRE tag = CAE} 
 	690 = { owned_by = THIS }
-	698 = { owned_by = THIS }
+	695 = { owned_by = THIS }
 	NOT = { has_country_flag = integrate_prussia }
 	}
 	

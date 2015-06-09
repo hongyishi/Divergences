@@ -2306,15 +2306,3 @@ Anglois_dilemma = {
 	non_accepted_pop_militancy_modifier = 0.08
 	pop_consciousness_modifier = 0.1
 }
-
-kebabbies = {
-	assimilation_rate = 0.10
-	non_accepted_pop_consciousness_modifier = 0.05
-	non_accepted_pop_militancy_modifier = 0.05
-	immigrant_push = 0.5
-	global_population_growth = 0.005
-	badboy = 0.01
-}
-
-kebabbies_wait = {
-}
