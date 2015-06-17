@@ -2318,3 +2318,7 @@ kebabbies = {
 
 kebabbies_wait = {
 }
+anglois_cultural_unity = {
+	assimilation_rate = 2.5
+	icon = 19
+	}
