@@ -2207,6 +2207,7 @@ country_event = {
 	name = "The Revolution was crushed !"
 	prestige = 50 
 	clr_global_flag = BOH_civil_war
+    clr_country_flag = Czechia
 	}
 }
 
