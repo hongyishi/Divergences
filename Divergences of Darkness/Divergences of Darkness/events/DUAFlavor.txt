@@ -2111,7 +2111,7 @@ country_event = { ##The Anglois success
 	}
 	
 	mean_time_to_happen = { 
-	months = 50 
+	months = 6
 	}
 	
 	option = { 

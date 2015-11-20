@@ -168,10 +168,7 @@ political_decisions = {
 			NA_15 = {
 				add_core = PLA
 			}
-			DNG_2 = {
-				add_core = PLA
-			}
-			DNG_88 = {
+			TEX_132 = {
 				add_core = PLA
 			}
 			MEX_2138 = {
@@ -591,6 +588,57 @@ political_decisions = {
 			}
 	}
 	
+	}
+	
+	Takikawa = { 
+	picture = Great_North 
+	
+	potential = { 
+	OR = { tag = JAP tag = KKN }
+	NOT = { 9 = { empty = yes } 2629 = { empty = yes } }
+	2598 = { empty = yes }
+	8 = { empty = yes }
+	10 = { empty = yes}
+	}
+	
+	allow = { 
+	is_greater_power = yes 
+	nationalism_n_imperialism = 1 
+	}
+	
+	effect = { 
+	random_owned = {
+				8 = { secede_province = THIS }
+				10 = { secede_province = THIS }
+				2598 = { secede_province = THIS }
+			}
+		}
+	
+	}
+	
+	Takikawa_2 = { 
+	picture = Great_North 
+	
+	potential = { 
+	OR = { tag = ARC tag = VIN tag = DNG }
+	NOT = { 9 = { empty = yes } 2629 = { empty = yes } }
+	2598 = { empty = yes }
+	8 = { empty = yes }
+	10 = { empty = yes}
+	}
+	
+	allow = { 
+	is_greater_power = yes 
+	OR = { electricity = 1 owns = 6 }
+	}
+	
+	effect = { 
+	random_owned = {
+				8 = { secede_province = THIS }
+				10 = { secede_province = THIS }
+				2598 = { secede_province = THIS }
+			}
+		}
 	}
 	
 	integrate_kita = { 
