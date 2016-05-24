@@ -2002,6 +2002,8 @@ country_event = {
 	tag = HRE 
 	NOT = { BOH = { exists = yes } }
 	has_country_flag = Czechia
+	NOT = { has_global_flag = BOH_civil_war }
+	NOT = { has_global_flag = BOH_civil_war_ended }
 	}
 
 	mean_time_to_happen = { 
@@ -2045,6 +2047,7 @@ country_event = {
 	NOT = { BOH = { exists = yes } }
 	has_global_flag = Prague_waiting
 	NOT = { has_global_flag = BOH_civil_war }
+	NOT = { has_global_flag = BOH_civil_war_ended }
 	}
 
 	mean_time_to_happen = { 
@@ -2142,6 +2145,7 @@ country_event = {
 	option = { 
 	name = "We have vainquished the Emperor !"
 	clr_global_flag = BOH_civil_war
+	set_global_flag = BOH_civil_war_ended
 	any_owned = { remove_core = HRE }
 	prestige = 50 
 	HRE = { country_event = 410058 }
@@ -2209,7 +2213,7 @@ country_event = {
 	name = "The Revolution was crushed !"
 	prestige = 50 
 	clr_global_flag = BOH_civil_war
-    clr_country_flag = Czechia
+	set_global_flag = BOH_civil_war_ended
 	}
 }
 

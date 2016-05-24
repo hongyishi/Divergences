@@ -2358,24 +2358,24 @@ artisan_cigarette = {
 	workforce = 10000
 }
 
-#artisan_horsebreeder = {
-#	input_goods = {   
-#		grain = 19
-#		fruit = 10
-#		iron = 3
-#	}
-#
-#	output_goods = horses 
-#	value = 16
-#	owner = {
-#		poptype = artisan 
-#		effect = output
-#	}
-#	
-#	type = artisan
-#	
-#	workforce = 10000
-#}
+artisan_horsebreeder = {
+	input_goods = {   
+		grain = 19
+		fruit = 10
+		iron = 3
+	}
+
+	output_goods = horses 
+	value = 8
+	owner = {
+		poptype = artisan 
+		effect = output
+	}
+	
+	type = artisan
+	
+	workforce = 10000
+}
 
 artisan_cobbler = {
 	input_goods = {   
