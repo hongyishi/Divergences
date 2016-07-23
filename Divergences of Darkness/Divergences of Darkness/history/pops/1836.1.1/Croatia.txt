@@ -642,7 +642,7 @@
 #Split (140000/35000 POPS)
 780 = {
 	aristocrats = {
-		culture = croat
+		culture = venetian
 		religion = catholic
 		size = 400
 	}
@@ -669,7 +669,7 @@
 	farmers = {
 		culture = croat
 		religion = catholic
-		size = 34350
+		size = 20350
 	}
 
 	clergymen = {
@@ -694,7 +694,7 @@
 	farmers = {
 		culture = venetian
 		religion = catholic
-		size = 450
+		size = 14450
 	}
 }
 #Zadar (128000/32000 POPS)
@@ -739,7 +739,7 @@
 	farmers = {
 		culture = croat
 		religion = catholic
-		size = 20525
+		size = 12525
 	}
 
 	bureaucrats = {
@@ -769,19 +769,19 @@
 	farmers = {
 		culture = venetian
 		religion = catholic
-		size = 2125
+		size = 11125
 	}
 
 	farmers = {
 		culture = serb
 		religion = orthodox
-		size = 6550
+		size = 5550
 	}
 }
 #Dubrovnik (52000/13000 POPS)
 782 = {
 	aristocrats = {
-		culture = croat
+		culture = venetian
 		religion = catholic
 		size = 75
 	}
@@ -808,7 +808,7 @@
 	farmers = {
 		culture = croat
 		religion = catholic
-		size = 9225
+		size = 6225
 	}
 
 	aristocrats = {
@@ -839,7 +839,7 @@
 	farmers = {
 		culture = venetian
 		religion = catholic
-		size = 400
+		size = 3400
 	}
 
 	clergymen = {
