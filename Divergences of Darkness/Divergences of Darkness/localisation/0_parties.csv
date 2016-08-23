@@ -204,16 +204,17 @@ DIN_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Frakti
 DIN_liberal;The Liberal Faction;Faction libérale;Die liberale Fraktion;;;;;;;;;;;x
 DIN_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;x
 DIN_socialist;The Socialist Faction;Faction libérale;Die liberale Fraktion;;;;;;;;;;;x
-DNG_anarcho_liberal;Radicals;Radicaux;Radikale;;;;;;;;;;;x
-DNG_communist;Communist;Communistes;Kommunisten;;;;;;;;;;;x
-DNG_conservative;Nationalists;Nationalistes;Nationalists;;;;;;;;;;;x
-DNG_conservative_2;Royalist;Royaliste;Royalisten;;;;;;;;;;;x
-DNG_fascist;Fascist;Fasciste;Faschisten;;;;;;;;;;;x
-DNG_liberal;Liberals;Libéraux;Libéraux;;;;;;;;;;;x
-DNG_liberal_2;Pro-Western;Pro-occident;Pro-occident;;;;;;;;;;;x
-DNG_liberal_3;New Liberals;Libéraux;Liberale;;;;;;;;;;;x
-DNG_reactionary;Conservatives;Conservateurs;Konservative;;;;;;;;;;;x
-DNG_socialist;Socialist;Socialiste;Sozialisten;;;;;;;;;;;x
+DNG_anarcho_liberal;Radical Party;Radicaux;Radikale;;;;;;;;;;;x
+DNG_communist;Industrial Labor Confederation;Communistes;Kommunisten;;;;;;;;;;;x
+DNG_conservative;The Iron Ring;Nationalistes;Nationalists;;;;;;;;;;;x
+DNG_conservative_2;Federalist Party;Royaliste;Royalisten;;;;;;;;;;;x
+DNG_fascist;Guómíndang;Guómíndang;Guómíndang;;;;;;;;;;;x
+DNG_liberal;United League;Libéraux;Libéraux;;;;;;;;;;;x
+DNG_liberal_2;Liberal Party;Pro-occident;Pro-occident;;;;;;;;;;;x=
+DNG_reactionary;Anti-Federalists;Conservateurs;Konservative;;;;;;;;;;;x
+DNG_socialist_1;Farmer-Labor Party;Socialiste;Sozialisten;;;;;;;;;;;x
+DNG_socialist_2;Republican Party;Socialiste;Sozialisten;;;;;;;;;;;x
+DNG_social_liberal_1;Democratic Reform Party;;;;;;;;;;;;;x
 DRA_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;x
 DRA_communist;Communist Faction;Faction royale;Königsfraktion;;;;;;;;;;;x
 DRA_conservative;Royal Faction;Faction royale;Königsfraktion;;;;;;;;;;;x
@@ -301,13 +302,18 @@ GCO_anarcho_liberal;Confederalistas;;;;;;;;;;;;;x
 GCO_communist;Internacionalistas;;;;;;;;;;;;;x
 GCO_conservative;Centralistas;;;;;;;;;;;;;x
 GCO_conservative_2;Hacendados;;;;;;;;;;;;;x
+GCO_conservative_3;Partido Nacional;;;;;;;;;;;;;x
+GCO_conservative_4;Partido Conservador;;;;;;;;;;;;;x
 GCO_fascist;Comunión Libertaria Bolivariana;;;;;;;;;;;;;x
 GCO_liberal;Federalistas;;;;;;;;;;;;;x
 GCO_liberal_2;Republicanos;;;;;;;;;;;;;x
+GCO_liberal_3;Partido de los Pueblos colombianos;;;;;;;;;;;;;x
+GCO_liberal_4;Partido Liberal;;;;;;;;;;;;;x
 GCO_reactionary;Imperialistas;;;;;;;;;;;;;x
 GCO_social_liberal;Justicialistas;;;;;;;;;;;;;x
 GCO_socialist;Populistas;;;;;;;;;;;;;x
 GCO_socialist_2;Partido de la Liberación;;;;;;;;;;;;;x
+GCO_socialist_3;Partido Colombiano de los Trabajadores;;;;;;;;;;;;;x
 GEN_anarcho_liberal_93;Radical Liberals;Radical Liberals;Radical Liberals;;;;;;;;;;;x
 GEN_communist_86;Communists;Communists;Communists;;;;;;;;;;;x
 GEN_conservative_92;Conservatives;Conservatives;Conservatives;;;;;;;;;;;x
@@ -535,11 +541,17 @@ MUS_socialist_2;Populists;Populistes;Populisten;;;;;;;;;;;x
 MUS_socialist_3;Socialist Revolutionary;Révolutionnaire socialiste;Sozialrevolutionäre;;;;;;;;;;;x
 NAN_anarcho_liberal;Secular Party;Secular Party;Secular Party;;;;;;;;;;;x
 NAN_communist;Communist Party;Communist Party;Communist Party;;;;;;;;;;;x
-NAN_conservative;Christian Party;Christian Party;Christian Party;;;;;;;;;;;x
+NAN_conservative_1;Royalists;;;;;;;;;;;;;x
+NAN_conservative_2;Conservative Party;;;;;;;;;;;;;x
+NAN_conservative_3;English Party;;;;;;;;;;;;;x
 NAN_fascist;League of the Righteous;League of the Righteous;League of the Righteous;;;;;;;;;;;x
-NAN_liberal;Reform Party;Reform Party;Reform Party;;;;;;;;;;;x
+NAN_liberal_1;Modernists;;;;;;;;;;;;;x
+NAN_liberal_2;Reform Party;Reform Party;Reform Party;;;;;;;;;;;x
+NAN_liberal_3;Liberal Party;;;;;;;;;;;;;x
 NAN_reactionary;Party of God;Party of God;Party of God;;;;;;;;;;;x
-NAN_socialist;Socialist Party;Socialist Party;Socialist Party;;;;;;;;;;;x
+NAN_socialist_1;Labour Party;Labour Party;Labour Party;;;;;;;;;;;x
+NAN_socialist_2;Progressist Alliance;;;;;;;;;;;;;x
+NAN_social_liberal;Liberal Democrats;;;;;;;;;;;;;x
 NBG_anarcho_liberal;Parti Radical;Parti radical;Parti Radical;;;;;;;;;;;x
 NBG_communist;Parti Communiste;Parti communiste;Parti Communist;;;;;;;;;;;x
 NBG_conservative;Parti Conservateur;Parti conservateur;Parti Conservateur;;;;;;;;;;;x
@@ -744,6 +756,7 @@ VEN_liberal_3;Liga Vèneta Republica;;;;;;;;;;;;;x
 VEN_anarcho_liberal;Radicale;;;;;;;;;;;;;x
 VEN_socialist_1;Partito Socialista Veneta;;;;;;;;;;;;;x
 VEN_socialist_2;Unitá Popolare Veneta;;;;;;;;;;;;;x 
+VEN_socialist_3;Liga Vèneta Pòpolo;;;;;;;;;;;;;x
 VEN_communist;Partito Comunista d'Venezia;;;;;;;;;;;;;x
 VEN_fascist;Prima il Veneto;;;;;;;;;;;;;x
 VEN_social_liberal;Liga Democratica Comunitaria;;;;;;;;;;;;;x
@@ -783,3 +796,11 @@ ZIM_fascist;The Fascist Faction;Faction nationaliste;Die nationalistische Frakti
 ZIM_liberal;The Liberal Faction;Faction libérale;Die liberale Fraktion;;;;;;;;;;x;
 ZIM_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;x;
 ZIM_socialist;The Socialist Faction;Faction libérale;Die liberale Fraktion;;;;;;;;;;x;
+TKS_reactionary;Steppe Party;;;;;;;;;;;;;x
+TKS_conservative;The Royal Faction;;;;;;;;;;;;;x
+TKS_liberal;The National Liberals;;;;;;;;;;;;;x
+TKS_socialist;The Socialist Party;;;;;;;;;;;;;x
+TKS_communist;The Communist Party of Turania;;;;;;;;;;;;;x
+TKS_anarcho_liberal;Radicals;;;;;;;;;;;;;x
+TKS_fascist;Sons of Genghis;;;;;;;;;;;;;x
+TKS_social_liberal;The Modernization Party;;;;;;;;;;;;x

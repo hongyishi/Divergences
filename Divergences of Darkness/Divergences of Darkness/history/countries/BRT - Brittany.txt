@@ -1,6 +1,6 @@
 capital = 423
 primary_culture = breton
-culture = french
+culture = anglois
 religion = catholic
 government = hms_government
 plurality = 5
@@ -66,7 +66,7 @@ commerce_raiders = yes
 consciousness = 3
 nonstate_consciousness = 1
 
-ruling_party = AAA_liberal_2
+ruling_party = BRT_conservative
 last_election = 1834.6.21
 upper_house = {
 	fascist = 0

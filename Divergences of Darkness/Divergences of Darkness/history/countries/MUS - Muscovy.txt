@@ -33,7 +33,8 @@ health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions
 
-ruling_party = RUS_conservative_2
+
+ruling_party = RUS_reactionary_1
 upper_house = {
 	fascist = 0
 	liberal = 19
